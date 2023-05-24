@@ -1,3 +1,4 @@
+import 'package:flt_fashion/pages/signUp.dart';
 import 'package:flutter/material.dart';
 
 class EntrancePage extends StatefulWidget {
@@ -97,7 +98,7 @@ class _EntrancePageState extends State<EntrancePage> {
               children: [
                 TextButton(
                   onPressed: () {
-                    // Navigator.push(context, MaterialPageRoute(builder: (context) => SignUpPage()));
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => SignUpPage()));
                   },
                   child: Text(
                     "Sign Up",
