@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
 
-class AfterLoginPage extends StatefulWidget {
-  const AfterLoginPage({super.key});
+class genderChoice extends StatefulWidget {
+  const genderChoice({super.key});
 
   @override
-  State<AfterLoginPage> createState() => _AfterLoginPageState();
+  State<genderChoice> createState() => _genderChoiceState();
 }
 
-class _AfterLoginPageState extends State<AfterLoginPage> {
+class _genderChoiceState extends State<genderChoice> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
         child: Stack(children: [
           Image.asset(
-            "assets/images/thirdImage.jpg",
+            "assets/images/firstImage.jpg",
             height: MediaQuery.of(context).size.height,
             width: MediaQuery.of(context).size.width,
             fit: BoxFit.cover,
@@ -25,33 +25,27 @@ class _AfterLoginPageState extends State<AfterLoginPage> {
             color: Colors.black.withOpacity(0.5),
           ),
           Positioned(
-              bottom: 100,
+              bottom: 150,
               right: 50,
               child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   const Text(
                     "Make Your Purchases As",
                     style: TextStyle(fontSize: 24, color: Colors.white, fontWeight: FontWeight.bold),
                   ),
                   const SizedBox(
-                    height: 10,
+                    height: 30,
                   ),
-                  const Row(
-                    children: [
-                      Expanded(
-                        child: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: 20),
-                          child: Divider(
-                            thickness: 10,
-                            color: Colors.white,
-                          ),
-                        ),
-                      ),
-                    ],
+                  SizedBox(
+                    width: 320,
+                    child: Divider(
+                      color: Colors.white54,
+                      thickness: 1,
+                    ),
                   ),
                   const SizedBox(
-                    height: 10,
+                    height: 30,
                   ),
                   Row(
                     children: [
@@ -103,14 +97,14 @@ class _AfterLoginPageState extends State<AfterLoginPage> {
                 ],
               )),
           const Positioned(
-            right: 0,
+            left: 0,
             child: Row(
               children: [
+                Icon(Icons.arrow_back_ios, color: Colors.white),
                 Text(
-                  "Sign Up",
+                  "Back",
                   style: TextStyle(color: Colors.white, fontSize: 15),
                 ),
-                Icon(Icons.arrow_forward_ios, color: Colors.white),
               ],
             ),
           )

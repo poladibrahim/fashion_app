@@ -1,6 +1,8 @@
 import 'package:flt_fashion/pages/signUp.dart';
 import 'package:flutter/material.dart';
 
+import 'login.dart';
+
 class EntrancePage extends StatefulWidget {
   const EntrancePage({super.key});
 
@@ -42,7 +44,7 @@ class _EntrancePageState extends State<EntrancePage> {
                     width: 300,
                     child: ElevatedButton(
                       onPressed: () {
-                        // Navigator.push(context, MaterialPageRoute(builder: (context) => LoginPage()));
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => LoginPage()));
                       },
                       child: Text(
                         "Sign In With Email",

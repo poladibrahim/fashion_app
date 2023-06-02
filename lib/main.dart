@@ -1,4 +1,6 @@
 import 'package:flt_fashion/pages/entrance.dart';
+import 'package:flt_fashion/pages/genderChoice.dart';
+import 'package:flt_fashion/pages/payment_page.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
@@ -11,7 +13,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Material App',
-      home: const EntrancePage(),
+      home: const PaymentPage(),
     );
   }
 }

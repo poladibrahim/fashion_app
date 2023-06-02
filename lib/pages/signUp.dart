@@ -8,6 +8,14 @@ class SignUpPage extends StatefulWidget {
 }
 
 class _SignUpPageState extends State<SignUpPage> {
+  bool isChecked = false;
+  @override
+  void checkBox() {
+    setState(() {
+      isChecked = !isChecked;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -117,6 +125,16 @@ class _SignUpPageState extends State<SignUpPage> {
               hintText: '   *********',
             ),
           ),
+          SizedBox(
+            height: 20,
+          ),
+          CheckboxListTile(
+              controlAffinity: ListTileControlAffinity.leading,
+              value: isChecked,
+              title: Text("You agree the terms and privacy policy"),
+              onChanged: (value) {
+                checkBox();
+              }),
           SizedBox(
             height: 50,
           ),
