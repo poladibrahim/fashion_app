@@ -1,3 +1,4 @@
+import 'package:flt_fashion/pages/genderChoice.dart';
 import 'package:flt_fashion/pages/signUp.dart';
 import 'package:flutter/material.dart';
 
@@ -68,7 +69,9 @@ class _EntrancePageState extends State<EntrancePage> {
                     height: 60,
                     width: 300,
                     child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => genderChoice()));
+                      },
                       style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.red, //background color of button
                           side: BorderSide(width: 3, color: Colors.white24), //border width and color
@@ -84,9 +87,11 @@ class _EntrancePageState extends State<EntrancePage> {
                             Icons.facebook,
                             color: Colors.white,
                           ),
-                          Text(
-                            "Continue With Facebook",
-                            style: TextStyle(color: Colors.white),
+                          Center(
+                            child: Text(
+                              "Continue With Facebook",
+                              style: TextStyle(color: Colors.white),
+                            ),
                           ),
                         ],
                       ),
