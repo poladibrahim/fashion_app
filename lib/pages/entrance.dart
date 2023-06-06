@@ -70,7 +70,7 @@ class _EntrancePageState extends State<EntrancePage> {
                     width: 300,
                     child: ElevatedButton(
                       onPressed: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (context) => genderChoice()));
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => genderChoicePage()));
                       },
                       style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.red, //background color of button

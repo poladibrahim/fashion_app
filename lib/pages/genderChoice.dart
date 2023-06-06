@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class genderChoice extends StatefulWidget {
-  const genderChoice({super.key});
+class genderChoicePage extends StatefulWidget {
+  const genderChoicePage({super.key});
 
   @override
-  State<genderChoice> createState() => _genderChoiceState();
+  State<genderChoicePage> createState() => _genderChoicePageState();
 }
 
-class _genderChoiceState extends State<genderChoice> {
+class _genderChoicePageState extends State<genderChoicePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
